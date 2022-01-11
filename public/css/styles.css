@@ -7,10 +7,10 @@ body{
    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
  }
 
-a{
-  text-decoration:none;
-  color : black;
-}
+ a, a:hover, a:active {
+   text-decoration:none;
+   color : white;
+ }
 
 .title{
   margin-bottom: 50px;
@@ -18,12 +18,16 @@ a{
 .gen {
   margin-bottom: 40px;
 }
+.genbt{
+  margin-bottom:7px;
+  margin-left: 10px;
+}
 .head{
  text-align: center;
 }
 
 .footer {
-padding-top:20px;
+padding-top:15px;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
@@ -31,6 +35,6 @@ padding-top:20px;
 	background-color: #9a32ef;
 }
 .footer-padding {
-	padding-bottom: 60px;
+	padding-bottom: 45px;
 
 }
