@@ -32,6 +32,7 @@ async function textOverlay(name) {
 app.get("/",(req,res)=>{
     //  res.sendFile(__dirname+"/index.html")
     res.render("index",{num:used})
+    used=1
 })
 
 app.post("/",(req,res)=>{
@@ -44,10 +45,7 @@ app.post("/",(req,res)=>{
 
 });
 
-process.on('SIGHUP', function() {
-  used=1
-  console.log(used)
-});
+
 
 app.listen(process.env.PORT || 3000,()=>{
   console.log("Successs")
