@@ -39,9 +39,9 @@ app.post("/",(req,res)=>{
 
   textOverlay(name)
 
-  setTimeout(function(){
+
     res.redirect("/")
-  }, 1000);
+
 });
 
 
