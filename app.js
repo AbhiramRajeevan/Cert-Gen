@@ -44,6 +44,10 @@ app.post("/",(req,res)=>{
 
 });
 
+process.on('SIGHUP', function() {
+  used=1
+  console.log(used)
+});
 
 app.listen(process.env.PORT || 3000,()=>{
   console.log("Successs")
