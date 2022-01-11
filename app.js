@@ -16,7 +16,7 @@ let used = 1
 async function textOverlay(name) {
   // Read the image.
   used = 2
-  const image = await Jimp.read('public/cert1.png');
+  const image = await Jimp.read('public/cert3.png');
   //await image.greyscale(); 400,650
   // Save and overwrite the image
   const font = await Jimp.loadFont(Jimp.FONT_SANS_64_BLACK);
